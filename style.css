@@ -45,7 +45,7 @@ ul {
 
 .bg-custom {
   height: 100vh;
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(./assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), #D2B48C), url(./assets/common-bg.svg);
   background-position: center;
 }
 
@@ -63,7 +63,8 @@ ul {
 }
 
 .btn-project{
-  background-color: #D2B48C;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
   font-weight: bold;
   transition: transform  0.3s ease;
 }
@@ -111,6 +112,36 @@ ul {
 }
 /* ------------ Skills section  ------------- */
 
+/* ------------ Projects section  ------------- */
+#projects{
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(./assets/common-bg.svg);
+  background-position: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  place-items: center;
+}
+
+.card{
+  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
+  width: 22rem;
+  min-height: 34rem;
+}
+
+.card img{
+  height: 100%;
+}
+
+.project-bg{
+  background-color: #f5f0e6;
+  height: 10rem;
+}
+
+/* ------------ Projects section  ------------- */
+
 @keyframes scrollFade {
   0%{
     transform: translateY(-27px);
@@ -135,5 +166,35 @@ ul {
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
