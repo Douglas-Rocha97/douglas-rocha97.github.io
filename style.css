@@ -129,6 +129,11 @@ ul {
   box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
   width: 22rem;
   min-height: 34rem;
+  transition: transform 300ms;
+}
+
+.card:hover{
+  transform: scale(1.03);
 }
 
 .card img{
@@ -141,6 +146,34 @@ ul {
 }
 
 /* ------------ Projects section  ------------- */
+
+/* ------------ Footer section  ------------- */
+
+.footer {
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), #D2B48C), url(./assets/common-bg.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding:0 2rem;
+  color: rgba(0,0,0,0.8);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  opacity: 0.25;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
 
 @keyframes scrollFade {
   0%{
