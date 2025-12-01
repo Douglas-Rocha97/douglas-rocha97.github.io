@@ -11,6 +11,7 @@ a {
 ul {
   list-style: none;
 }
+
 /* ------------ reset ------------- */
 
 /* ------------ nav ------------- */
@@ -49,7 +50,8 @@ ul {
   background-position: center;
 }
 
-.social-shadow,.nav-shadow {
+.social-shadow,
+.nav-shadow {
   box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
 }
 
@@ -58,24 +60,24 @@ ul {
   background-color: #D2B48C;
 }
 
-.fs-name{
+.fs-name {
   font-size: 4.5rem;
 }
 
-.btn-project{
+.btn-project {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
   font-weight: bold;
-  transition: transform  0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-.btn-project:hover{
+.btn-project:hover {
   color: rgb(48, 48, 48);
   transform: translateY(-5px);
   box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
 }
 
-.scroll-arrow{
+.scroll-arrow {
   transform: translateY(-27px);
   animation: scrollFade 2.5s ease-out infinite;
 }
@@ -83,7 +85,7 @@ ul {
 /* ------------ first section ------------- */
 
 /* ------------ About section  ------------- */
-.line::after{
+.line::after {
   content: "";
   position: absolute;
   top: calc(100% + .5rem);
@@ -94,26 +96,28 @@ ul {
   background-color: #D2B48C;
   border-radius: 5px;
 }
+
 /* ------------ About section  ------------- */
 
 /* ------------ Skills section  ------------- */
-.carousel-container{
+.carousel-container {
   animation: scrollStacks 40s linear infinite;
   width: max-content;
 }
 
-.carousel-container img{
+.carousel-container img {
   margin-left: 5rem;
   width: 5rem;
 }
 
-.paused{
+.paused {
   animation-play-state: paused;
 }
+
 /* ------------ Skills section  ------------- */
 
 /* ------------ Projects section  ------------- */
-#projects{
+#projects {
   background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(./assets/common-bg.svg);
   background-position: center;
 }
@@ -125,24 +129,32 @@ ul {
   place-items: center;
 }
 
-.card{
+.card {
   box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
   width: 22rem;
   min-height: 34rem;
   transition: transform 300ms;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.03);
 }
 
-.card img{
+.card img {
   height: 100%;
 }
 
-.project-bg{
+.project-bg {
   background-color: #f5f0e6;
   height: 10rem;
+}
+
+.gitrepo:hover {
+  color: #D2B48C;
+}
+
+.ytrepo:hover {
+  color: red;
 }
 
 /* ------------ Projects section  ------------- */
@@ -155,8 +167,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding:0 2rem;
-  color: rgba(0,0,0,0.8);
+  padding: 0 2rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-links {
@@ -176,17 +188,17 @@ ul {
 
 
 @keyframes scrollFade {
-  0%{
+  0% {
     transform: translateY(-27px);
     opacity: 0.8;
   }
 
-  50%{
+  50% {
     transform: translateY(-20px);
     opacity: 0.5;
   }
 
-  100%{
+  100% {
     transform: translateY(0);
     opacity: 0;
   }
